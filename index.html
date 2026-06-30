@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>COD_NAIGHT | فروش اکانت بازی</title>
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:tahoma;
+}
+
+body{
+background:#0d0d0d;
+color:white;
+}
+
+header{
+background:#151515;
+text-align:center;
+padding:25px;
+box-shadow:0 0 20px #00aaff;
+}
+
+.logo{
+width:140px;
+height:140px;
+border-radius:20px;
+object-fit:cover;
+box-shadow:0 0 25px #00aaff;
+margin-bottom:15px;
+}
+
+h1{
+font-size:38px;
+color:#00bfff;
+}
+
+.subtitle{
+color:#bbb;
+margin-top:10px;
+}
+
+.channel{
+display:inline-block;
+margin-top:20px;
+padding:12px 25px;
+background:#00aaff;
+color:white;
+text-decoration:none;
+border-radius:12px;
+font-weight:bold;
+}
+
+.channel:hover{
+background:#0088cc;
+}
+
+.search{
+margin:30px auto;
+width:90%;
+max-width:500px;
+display:flex;
+gap:10px;
+}
+
+.search input{
+flex:1;
+padding:14px;
+border:none;
+border-radius:10px;
+font-size:16px;
+}
+
+.search button{
+padding:14px 20px;
+border:none;
+background:#00aaff;
+color:white;
+border-radius:10px;
+cursor:pointer;
+}
+
+.container{
+width:95%;
+max-width:900px;
+margin:auto;
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:20px;
+padding-bottom:40px;
+}
+
+.card{
+background:#1c1c1c;
+border-radius:15px;
+padding:20px;
+box-shadow:0 0 10px rgba(0,170,255,.4);
+transition:.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+box-shadow:0 0 20px #00aaff;
+}
+
+.code{
+color:gold;
+font-size:18px;
+margin:10px 0;
+}
+
+.price{
+color:#00ff88;
+font-size:22px;
+margin:10px 0;
+}
+
+.status{
+color:#00ff66;
+}
+
+.view{
+margin-top:15px;
+width:100%;
+padding:12px;
+background:#00aaff;
+border:none;
+border-radius:10px;
+color:white;
+font-size:16px;
+cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<!-- لوگوی خودت -->
+<img src="logo.jpg" class="logo">
+
+<h1>COD_NAIGHT</h1>
+
+<p class="subtitle">
+فروش اکانت بازی
+</p>
+
+<a class="channel"
+href="https://splus.ir/COD_NAIGHT"
+target="_blank">
+
+📢 ورود به کانال
+
+</a>
+
+</header>
+
+<div class="search">
+
+<input
+id="search"
+placeholder="کد آگهی را وارد کنید...">
+
+<button onclick="searchAd()">
+جستجو
+</button>
+
+</div>
+
+<div class="container">
+
+<div class="card" id="4700">
+
+<h2>🎮 Clash of Clans</h2>
+
+<p class="code">
+کد: 4700
+</p>
+
+<p>
+تاون هال 17 MAX
+</p>
+
+<p class="price">
+8,500,000 تومان
+</p>
+
+<p class="status">
+🟢 موجود
+</p>
+
+<button class="view">
+مشاهده
+</button>
+
+</div>
+
+<div class="card" id="4812">
+
+<h2>🎮 PUBG Mobile</h2>
+
+<p class="code">
+کد: 4812
+</p>
+
+<p>
+Level 82
+</p>
+
+<p class="price">
+3,200,000 تومان
+</p>
+
+<p class="status">
+🟢 موجود
+</p>
+
+<button class="view">
+مشاهده
+</button>
+
+</div>
+
+</div>
+
+<script>
+
+function searchAd(){
+
+let code=document.getElementById("search").value;
+
+let ad=document.getElementById(code);
+
+if(ad){
+
+ad.scrollIntoView({behavior:"smooth"});
+
+ad.style.border="3px solid gold";
+
+}else{
+
+alert("آگهی پیدا نشد.");
+
+}
+
+}
+
+</script>
+
+</body>
+</html>
